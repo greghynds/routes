@@ -1,5 +1,5 @@
 # Routes    
-A tiny Android library for testable navigation logic.
+A tiny Android library for testable navigation logic
 
 ![CI](https://github.com/greghynds/routes/workflows/CI/badge.svg)
     
@@ -33,28 +33,28 @@ class ExampleActivity : AppCompatActivity() {
 ```    
 ## Receiving parameters in an Activity
 ```kotlin
-class DestinationActivity : AppCompatActivity() {  
-  
-  override fun onCreate(savedInstanceState: Bundle?) {  
-      super.onCreate(savedInstanceState)  
-  
-	  // access params directly from the Intent  
-	  val foo = intent?.extras?.getInt("foo")  
-	  val bar = intent?.extras?.getBoolean("bar")  
-  
-	  // or use the withParams() extension  
-	  withParams {  
-	      val foo = getInt("foo") 
-	      val bar = getBoolean("bar")  
-	  }  
-     }
- }  
+class DestinationActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        // access params directly from the Intent
+        val foo = intent?.extras?.getInt("foo")
+        val bar = intent?.extras?.getBoolean("bar")
+
+        // or use the withParams() extension
+        withParams {
+            val foo = getInt("foo")
+            val bar = getBoolean("bar")
+        }
+    }
+}
 ```  
 
 ## Testing navigation logic
 
 
-This is an example of a top-level 'route builder' function that returns a Route with two parameters.  
+This is an example of a top-level 'Route builder' function that returns a Route with two parameters.  
   
 ```kotlin  
 fun createGreetingRoute(greeting: String, name: String): Route {
@@ -64,7 +64,7 @@ fun createGreetingRoute(greeting: String, name: String): Route {
         .create()
 }
 ```  
-And here's a test that checks the route is created with the correct destination and parameters.  
+And here's a test that checks the Route is created with the correct destination and parameters.  
 
 ```kotlin
 @Test 
