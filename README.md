@@ -1,5 +1,3 @@
-
-  
 # Routes    
 A tiny Android library for testable navigation logic.
     
@@ -8,7 +6,7 @@ Navigating to different screens on Android is handled by starting an [Intent](ht
   
 A [Route](https://github.com/greghynds/routes/blob/master/lib/src/main/java/com/gwh/routes/Route.kt) is a simple abstraction of Android's Intent class, but without any dependencies on the Android framework types.* Routes can be created with a set of parameters, just like a Bundle. Using Routes in presentation code makes it easy to unit test our navigation logic. The library also includes some extension methods for using Routes in an Activity class.
 
-\* Except for [Parcelable](https://developer.android.com/reference/android/os/Parcelable). 
+\*Except for [Parcelable](https://developer.android.com/reference/android/os/Parcelable). 
   
 ## Launching a Route from an Activity
 ```kotlin 
@@ -90,6 +88,17 @@ fun `creates route for greeting page`() {
 
 ## Sample 
 You can find a more complete example of using Routes and testing them in the sample project. 
+
+
+## Installing 
+
+Routes is available on [JitPack](https://jitpack.io). To include it in your project, add the following line to your `build.gradle`:
+
+```gradle
+dependencies {
+    implementation 'com.github.greghynds:routes:1.0.0'
+}
+```
   
 ## Building    
  The project can be built by navigating to the root directory and running:    
