@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Routes Sample</string>
+    <string name="say_hello_btn_text">Say hello</string>
+    <string name="say_goodbye_btn_text">Say goodbye</string>
+</resources>
