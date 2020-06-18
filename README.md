@@ -1,5 +1,7 @@
 # Routes    
 A tiny Android library for testable navigation logic.
+
+![CI](https://github.com/greghynds/routes/workflows/CI/badge.svg)
     
 ## Intro   
 Navigating to different screens on Android is handled by starting an [Intent](https://developer.android.com/reference/android/content/Intent), but the Intent class can't be used in unit tests because it depends on Android's [Context](https://developer.android.com/reference/android/content/Context), which is only available at runtime. This makes it difficult to write test scenarios that can check our app is navigating to the right place with the right parameters.  
