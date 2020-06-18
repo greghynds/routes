@@ -25,3 +25,5 @@ jobs:
     # Runs a single command using the runners shell
     - name: Android Build
       uses: vgaidarji/android-github-actions-build@v1.0.1
+      with:
+        args: "./gradlew build"
